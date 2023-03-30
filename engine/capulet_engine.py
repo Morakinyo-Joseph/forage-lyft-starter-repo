@@ -1,6 +1,3 @@
-from abc import ABC
-
-from car import Car
 from engine.model.engine import Engine
 
 
