@@ -17,15 +17,16 @@ class CarFactory(Car):
         return
 
     def create_glissade(current_date, last_service_date, current_mileage, last_service_mileage):
-        WilloughbyEngine(last_service_date, current_mileage, last_service_mileage)
+        engine = WilloughbyEngine(last_service_date, current_mileage, last_service_mileage)
         battery = SplinderBattery(last_service_date)
         car = Car(engine, battery)
         return car
 
     def create_palindrome(current_date, last_service_date, warning_light_on):
-        engine = SternmanEngine(last_service_date, warning_light_is_on)
+
+        engine = SternmanEngine(last_service_date, )
         battery = SplinderBattery(last_service_date)
-        return car
+        return Car
 
     def create_rorschach(current_date, last_service_date, current_mileage, last_service_mileage):
         engine = WilloughbyEngine(last_service_date, current_mileage, last_service_mileage)
